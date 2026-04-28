@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+    font-family: "Akira";
+    src: url("../font/Akira Expanded Demo.otf");
+}
+
+@font-face {
+    font-family: "ITCEDSCR";
+    src: url("../font/ITCEDSCR.Ttf");
+}
+
+/*
+font-family: "Montserrat", sans-serif;
+font-family: "Noto Sans KR", sans-serif;
+font-family: "Red Hat Text", sans-serif;
+*/
+
+*{margin: 0; padding: 0;}
+li{list-style:none;}
+.clearfix::after{content:""; display:block; clear:both;}
+a,a:link{color: #ffffff;letter-spacing:normal;text-decoration:none;}
+
+/*  header  */
+#header_wrap{width: 1400px;
+             margin:0 auto;
+             margin-top: 50px;}
+
+header li{float:left;
+          color: #ff2f36;
+          font-size: 23px;
+          font-weight: 700;
+          font-family: "Red Hat Text", sans-serif;}
+
+header li:nth-child(1){margin-left:0px;}
+header li:nth-child(2){text-align: center;
+                       width: 190px;
+                       margin-left: 466px;}
+header li:nth-child(3){text-align: right;
+                       float:right;} 
+
+/*  title  */
+#title{width: 1400px;
+       margin:0 auto;
+       color: #ff2f36;}
+
+h1{font-size: 140px;
+    text-align: center;
+    line-height: 115px;
+    font-family: "Akira";
+    margin-top: -25px;
+    margin-bottom: -72px;}   
+
+.title_img{width: 1400px;
+           text-align: center;} 
+
+.title_img:nth-child(1){margin-top: 40px;}
+
+/*  con_1  */
+#con_1{width: 1400px;
+       margin:0 auto;}
+
+#con_1 ul{margin-top: 40px;}
+#con_1 li{float:left;
+          color: #ff2f36;
+          font-size: 23px;
+          font-weight: 600;
+          font-family: "Red Hat Text", sans-serif;}
+
+#con_1 li:nth-child(1){width: 160px;
+                       margin-left:0px;}                      
+#con_1 li:nth-child(2){width: 1080px;
+                       text-align: center;
+                       margin-top: 10px;
+                       font-weight: 700;}
+#con_1 li:nth-child(3){width: 160px;
+                       text-align: right;
+                       float:right;}
+
+#con_1 li p:nth-child(2){font-weight: 700;}                      
+
+/*  open page  */                                     
+#open_page{color: #ffffff;
+           width: 1400px;
+           height: 1420px;
+           margin-top: 80px;
+           margin-left: -160px;
+           background-color: #ff2f36;}
+summary{text-decoration: underline;}     
+
+/*  open page 빨강배경 안에 내용  */   
+#open_page ul{width: 1200px;
+              margin: 0 auto;
+              padding: 20px;}
+#open_page li{margin-top: 20px;
+              margin-bottom: 20px;}
+
+.divider {
+    width: 1200px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 50px 0 0 100px;
+}
+
+/* 프로젝트 내용 */
+.project {
+    padding: 20px 0;
+}
+
+.project-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+h2{font-size: 30px;
+}
+    
+h3{font-size: 20px;
+    font-weight: 400;
+}
+
+.project-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.project-image {
+    width: 125px;
+    height: 125px;
+    background-color: #ffffff;
+    margin-left: 100px;
+}
+
+/* 첫번째 .project-image 요소를 아래로 이동 */
+.project:nth-of-type(1) .project-image:nth-child(1){
+    margin-top: 100px;
+}
+/* 두번째 .project-image 요소를 아래로 이동 */
+.project:nth-of-type(3) .project-image:nth-child(1){
+    margin-top: 30px;
+}
+/* 세번째 .project-image 요소를 아래로 이동 */
+.project:nth-of-type(5) .project-image:nth-child(1){
+    margin-top: 170px;
+}
+
+
+
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 기본 간격 */
+    margin-top: -90px;
+    width: 725px;
+    text-align: left;
+    margin-right: 100px;
+    background-color: ;
+}
+
+.project-details a {
+    display: flex;
+    align-items: center;
+}
+
+.project-details h4 {
+    margin: 0;
+    flex: 1; /* Flexbox 요소의 크기를 조절 */
+    font-size: 50px;
+    font-family: "Akira";
+    white-space: nowrap; /* 한 줄로 노출 */
+}
+
+.project-details h5 {
+    margin: 0;
+    margin-top: 9px;
+    flex: 1; /* Flexbox 요소의 크기를 조절 */
+    text-align: right; /* 우측 정렬 */
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Red Hat Text", sans-serif;
+    background-color: ;
+    white-space: nowrap; /* 한 줄로 노출 */
+
+}
+
+
+/* STYLE NANDA h5 요소 간격 조절 
+.project:nth-of-type(1) .project-details a:nth-child(3) h5 {
+    margin-right: 200px;
+}
+.project:nth-of-type(1) .project-details a:nth-child(4) h5 {
+    margin-right: 360px;
+}
+
+
+/* 1300k h5 요소 간격 조절
+.project:nth-of-type(3) .project-details a:nth-child(3) h5 {
+    margin-right: 200px;
+}
+.project:nth-of-type(3) .project-details a:nth-child(4) h5 {
+    margin-right: 275px;
+}
+
+
+/* OUTSOURCING h5 요소 간격 조절
+.project:nth-of-type(5) .project-details a:nth-child(1) h5 {
+    text-align: left;
+}
+.project:nth-of-type(5) .project-details a:nth-child(2) h5 {
+    text-align: left;
+}
+.project:nth-of-type(5) .project-details a:nth-child(3) h5 {
+    text-align: left;
+    margin-right: -150px;
+}
+.project:nth-of-type(5) .project-details a:nth-child(4) h5 {
+    text-align: left;
+    margin-right: -50px;
+}
+.project:nth-of-type(5) .project-details a:nth-child(5) h5 {
+    text-align: left;
+    margin-right: -230px;
+}
+*/
+
+
+
+
+/* HANKOOK COSMETIC 한 줄로 노출되게 하고, h5를 그 아래에 한 줄로 노출되게 하기 */
+.project-details a:nth-of-type(6) {
+    display: block; /* a 요소를 블록으로 처리 */
+    flex-direction: column; /* 요소를 세로로 배치 */
+}
+.project-details a:nth-of-type(6) h4 {
+    white-space: nowrap; /* 한 줄로 노출 */
+}
+.project-details a:nth-of-type(6) h5 {
+    white-space: nowrap; /* 한 줄로 노출 */
+    text-align: right; /* 텍스트 정렬변경*/
+    margin-top: 5px; /* 간격 조정 (필요에 따라) */
+}
+
+
+
+
+
+
+/* GET IN TOUCH 섹션 스타일링 */
+#get-in-touch {
+    margin:0 auto;
+    margin-top: 75px;
+    width: 1400px;
+    background-color: #ff2f36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* 콘텐츠가 줄 바꿈 없이 한 줄로 나열되도록 설정 */
+    color: #ffffff;
+    font-family: "Akira", sans-serif;
+    overflow: hidden; /* 콘텐츠가 넘칠 때 숨기기 */
+    position: relative;
+    height: 85px; /* 섹션 높이 설정 */
+
+
+}
+
+.touch-section {
+    font-size: 65px;
+    white-space: nowrap;
+    display: flex; /* 플렉스 컨테이너로 설정 */
+    align-items: center; /* 아이템을 수직 정렬 */
+    animation: scrollText 20s linear infinite; /* 애니메이션 설정 */
+}
+
+.touch-section .circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 45px 0 50px; /* 원과 텍스트 사이의 간격 설정 */
+}
+
+
+
+
+/* 무한 스크롤 애니메이션 */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* 오른쪽 끝에서 시작 */
+    }
+    100% {
+        transform: translateX(-100%); /* 왼쪽 끝으로 이동 */
+    }
+}
+
+
+
+
+
+
+.contact-info {
+    margin: 0 auto;
+    width: 1400px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: flex; /* Flexbox를 사용하여 h6와 contact-details가 같은 줄에 있도록 설정 */
+    align-items: center; /* 아이템을 수직으로 정렬 */
+    justify-content: space-between; /* 아이템 사이에 공간을 균등하게 배분 */
+}
+
+h6 {
+    font-size: 65px;
+    color: #ff2f36;
+    font-family: "Akira", sans-serif;
+    margin: 0; /* 기본 margin 제거 */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column; /* p 요소를 수직으로 배치 */
+    align-items: flex-end; /* 오른쪽 정렬 */
+}
+
+.contact-details a {
+    text-align: right;
+    color: #ff2f36;
+    font-family: "Red Hat Text", sans-serif;
+    margin: 0; /* 기본 margin 제거 */
+}
+
+.contact-details a p {
+    font-size: 23px;
+    font-weight: 800;
+    display: inline-block; /* 같은 줄에 위치 */
+}
